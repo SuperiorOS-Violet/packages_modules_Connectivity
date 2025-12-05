@@ -59,7 +59,7 @@ static constexpr unsigned minSupportedKernelVer =
 #ifdef __ANDROID_APEX__  // Mainline code (incl. NetBpfLoad) in APEX shouldn't (yet) assume anything
         KVER(0, 0, 0);
 #elif __ANDROID_API__ >= 10000 // tip of dev tree - we'll need to bump this manually as time advances
-        KVER(5, 10, 0);
+        KVER(5, 4, 0);
 #elif __ANDROID_API__ >= 41 // Android ~21 - 30Q2: G -- note: 6.12 likely min for 29Q4-ish
         KVER(6, 12, 0);
 #elif __ANDROID_API__ >= 40 // Android ~20 - 29Q2: F -- note: 6.6 likely min for 28Q4-ish
